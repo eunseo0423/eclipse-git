@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author KOSA
+ *
+ */
+module testproject {
+}
