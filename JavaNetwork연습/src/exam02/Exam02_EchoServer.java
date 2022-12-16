@@ -20,7 +20,7 @@ import javafx.stage.Stage;
 
 public class Exam02_EchoServer extends Application { // Application은 추상class
 
-	TextArea  textarea; // field로 잡아서 우리 class 내에서 자유롭게 사용하기 좋음
+	TextArea textarea; // field로 잡아서 우리 class 내에서 자유롭게 사용하기 좋음
 	Button startBtn;
 	Button stopBtn;
 	ServerSocket server;
@@ -40,7 +40,7 @@ public class Exam02_EchoServer extends Application { // Application은 추상cla
 		// 창의 화면 구성을 하게 돼요
 		// Layout
 		BorderPane root = new BorderPane();
-		root.setPrefSize(700, 500); // 크기 조절
+		root.setPrefSize(700, 500); // 크기 조정
 		
 		textarea = new TextArea();
 		root.setCenter(textarea);// 중앙에 붙이기
