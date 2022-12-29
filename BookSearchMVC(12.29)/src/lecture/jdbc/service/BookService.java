@@ -25,6 +25,8 @@ public class BookService {
 		// 로직처리해야해요!
 		// 지금은 DB 처리만 하면돼요
 		BookDAO dao = new BookDAO();
+		
+		// 2개의 작업이 하나의 transaction으로 묶여야 하는데 그게 안되고 있음.. 그에 대한 코드 변경을 30일에 진행 
 		int count = dao.delete(deleteISBN); // 지우기
 		ObservableList<BookVO> list = dao.select(searchKeyword); // 검색해서 결과 가져오기
 		return list;
