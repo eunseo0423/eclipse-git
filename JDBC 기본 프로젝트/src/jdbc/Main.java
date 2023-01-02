@@ -18,9 +18,11 @@ public class Main {
 			System.out.println("Driver Loading 성공!"); // Driver Loading은 프로그램 내에서 딱 한번만 하면됨
 			// jdbc 를 이용해서 mysql에 접속할거에요
 			String jdbc_url = "jdbc:mysql://127.0.0.1:3306/library?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true"; 
+													  //사용database명
 			// ID와 Password
 			String id = "root";
 			String pw = "test1234";
+			
 			// 2. Database 접속
 			Connection con = DriverManager.getConnection(jdbc_url, id, pw);
 			System.out.println("데이터베이스 접속 성공!!");

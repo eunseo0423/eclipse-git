@@ -25,5 +25,11 @@ public class Sample {
 		
 		System.out.println(Arrays.toString(result));
 		
+		
+		StringBuffer sb = new StringBuffer();
+		sb.append("jump to java");
+		sb.insert(1, "hello ");
+		System.out.println(sb.toString());
+		
 	}
 }

@@ -43,7 +43,7 @@ public class Example01 {
 			// 5. 결과처리!
 			while(rs.next()) {
 				// 6. VO 생성
-				Department dept = new Department(rs.getString("category"), // Class 부터 만들어야 instance(VO) 생성
+				Department dept = new Department(rs.getString("category"), // Class 부터 만들어야 instance(VO) 생성 (Department class 생성)
 						rs.getString("department_name"),
 						rs.getInt("capacity"));
 				// arraylist에 추가
